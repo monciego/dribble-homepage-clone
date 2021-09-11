@@ -141,13 +141,13 @@ img {
 
 .designer-name {
   font-weight: 500;
-  font-size: 1.1rem;
   padding: 0 0.5rem;
   text-transform: capitalize;
 }
 
 .badge {
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
   background: #ccc;
   font-weight: 700;
