@@ -1,38 +1,193 @@
-.App {
+.container {
+  width: 90%;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: 700;
+  margin: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.sub-title {
+  margin-bottom: 3rem;
+}
+
+.link {
+  color: #ea4c89;
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.cards {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card-image {
+  width: 100%;
+  height: 263px;
+  width: 352px;
+  cursor: pointer;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-image img {
+  border-radius: 10px;
+}
+
+.project-details {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(34, 36, 36, 0.404),
+    rgba(0, 0, 0, 0.301)
+  );
+  position: absolute;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.card-image:hover .project-details {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.bucket {
+  display: flex;
+}
+
+.project-details .bucket-icon {
+  height: 34px;
+  width: 34px;
+  border-radius: 5px;
+  margin: 0.5rem;
+  background: #fff;
+  position: relative;
+}
+
+.project-details .bucket-icon svg {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+  fill: #6e6d7a;
+}
+
+.project-details .bucket-icon:hover {
+  opacity: 0.8;
+}
+
+.project-title {
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-details {
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-details > div:first-child {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.designer-logo {
+  height: 24px;
+  width: 24px;
+}
+
+.designer-logo img {
+  border-radius: 50%;
+}
+
+.designer-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  text-transform: capitalize;
+}
+
+.badge {
+  text-decoration: none;
+  color: #fff;
+  background: #ccc;
+  font-weight: 700;
+  padding: 0 3px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  padding-bottom: 1px;
+}
+
+.badge:hover {
+  background: #ea4c89;
+}
+
+.actions,
+.count {
+  display: flex;
+  align-items: center;
+}
+
+.actions .count:first-child {
+  margin-right: 0.4rem;
+}
+
+.count svg {
+  margin: 0 0.3rem;
+}
+
+.count span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3d3d4e;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+  fill: #9e9ea7;
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: #ea4c89;
 }
